@@ -1,59 +1,83 @@
-<DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../Responsive-Portfolio-/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="main.js"></script>
-</head>
-<body>
-        <ul class="nav flex-column">
-                <li class="nav-item">
-                    <div class="p-3 mb-2 bg-info"><a class="nav-link text-white" href="index.html">Abzal</a></div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
-                </li>
-    
-                <li class="nav-item">
-                <div class="p-3 mb-2 bg-info"><a class="nav-link text-white" href="portfolio.html">Portfolio</a></div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <hr />
-            <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                <section role="section" class="boxsection">
-                    <form>
-                            <div class="p-3 mb-2 bg-info text-white"><h1>Contact</h1></div>
-                        <hr>
-                        <fieldset>
-                            <label for="name"></label>
-                            Name:<input type="text" class="name" name="firstname"
-                            placeholder="John Smith"> <br>
-                            Email:<input type="text" class="name" name="firstname"
-                            placeholder="username@domain.com"> <br>
-                            Message: <br> <textarea rows="18" cols="100"></textarea> <br>
-                            <button type="submit" class="submitbutton">Submit</button>
-                        </fieldset>
-                    </form>
-                </section>
-                        </div>
-                    </div>
-                </div>
-                <div class="row center">
-                    <div class="col-12">
-                            <div class="p-3 mb-2 bg-info text-white"><h1 class="text-center">Copyright</h1></div>
-                    </div>
-                </div>
+<!doctype html>
+<html lang="en-us">
 
+<head>
+ <meta charset="UTF-8">
+ <title>Contact</title>
+ <link href="https://fonts.googleapis.com/css?family=Anton|EB+Garamond" rel="stylesheet">
+ <link href="../..//Desktop/Responsive-Portfolio-/css/style.css" rel="stylesheet" type="text/css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>  
+  <div class="MainBody">
+
+      <div class="HeaderBody" id="myHeader" style="left: 0px;">
+          <div class="clearfix">
+              <div class="HeaderNav">
+                  <h1 class="MyName">Abzal Koitanov</h1>
+
+                  <div class="TopNav-Outer">
+                      <div class="TopNav">
+                          <p class="About"><a href="index.html" target="_self">About</a></p>
+                      </div>
+                      <div class="TopNav">
+                          <p class="Portfolio"><a href="portfolio.html" target="_self">Portfolio</a></p>
+                      </div>
+                      <div class="TopNav">
+                          <p class="Contact"><a href="contact.html" target="_self">Contact</a></p>
+                      </div>                            
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <div class="Main-content">
+
+        <div class="Header">
+            <h1 class="SubHead">Contact</h1>
+        </div>
+
+        <div class="Main-content-details">
+            <div class="Main-Text">
+
+                <form id="contact-form" method="post" action="">
+                    <p>Name</p>
+                    <input name="name" type="text" class="form-control" placeholder="Brat Pitt" required>
+                    <br>
+                    <p>Email</p>
+                    <input name="email" type="email" class="form-control" placeholder="something@gmail.com" required>
+                    <br>
+                    <p>Message</p>
+                    <textarea name="message" class="form-control" placeholder="Message" rows="10" required></textarea>
+                    <br>
+                    <input type="submit" class="form-control submit" value="Submit">
+                </form>
+            </div>
+        </div>
+      </div>
+
+      <footer>
+
+
+      </footer>
+      </div>
+
+      <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
     
 </body>
 </html>

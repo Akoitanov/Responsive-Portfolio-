@@ -1,81 +1,117 @@
-<DOCTYPE html>
-<html>
+ <!doctype html>
+<html lang="en-us">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../Responsive-Portfolio-/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="main.js"></script>
+ <meta charset="UTF-8">
+ <title>Portfolio</title>
+ <link href="https://fonts.googleapis.com/css?family=Anton|EB+Garamond" rel="stylesheet">
+ <link href="../..//Desktop/Responsive-Portfolio-/css/style.css" rel="stylesheet" type="text/css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-    
-        <ul class="nav flex-column">
-                <li class="nav-item">
-                    <div class="p-3 mb-2 bg-info"><a class="nav-link text-white" href="index.html">Abzal</a></div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
-                </li>
-    
-                <li class="nav-item">
-                <div class="p-3 mb-2 bg-info"><a class="nav-link text-white" href="portfolio.html">Portfolio</a></div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <hr />
-            <div class="container">
+
+<body>  
+  <div class="MainBody">
+
+      <div class="HeaderBody" id="myHeader" style="left: 0px;">
+          <div class="clearfix">
+              <div class="HeaderNav">
+                  <h1 class="MyName">Abzal Koitanov</h1>
+
+                  <div class="TopNav-Outer">
+                      <div class="TopNav">
+                          <p class="About"><a href="index.html" target="_self">About</a></p>
+                      </div>
+                      <div class="TopNav">
+                          <p class="Portfolio"><a href="portfolio.html" target="_self">Portfolio</a></p>
+                      </div>
+                      <div class="TopNav">
+                          <p class="Contact"><a href="contact.html" target="_self">Contact</a></p>
+                      </div>                            
+                  </div>
+
+              </div>
+          </div>
+      </div>
+      <div class="Main-content">
+      
+        <div class="Header">
+            <h1 class="SubHead">Portfolio</h1>
+        </div>
+            
+        <div class="Main-content-details">
+            <div class="flex-container">
+                <div class="Portfolio-items">
+                    <a href="https://aljoker2001.github.io/Project1/">
+                        <img id="images" src="../Responsive-Portfolio-/pictures/gnev.png" alt="anger" width="200" height="200">
+                        <div class="Portfolio-item-name">
+                            <p>Super Heroes</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="Portfolio-items">
+                    <a href="#">
+                        <img id="images" src="../Responsive-Portfolio-/pictures/happy.jpg" alt="happy" width="200" height="200">
+                        <div class="Portfolio-item-name">
+                            <p>img2</p>
+                        </div>
+                    </a>
+                </div> 
                 
-               
+                <div class="Portfolio-items">
+                    <a href="#">
+                        <img id="images" src="../Responsive-Portfolio-/pictures/surprise.jpg" alt="surprise" width="200" height="200">
+                        <div class="Portfolio-item-name">
+                            <p>img3</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="Portfolio-items">
+                    <a href="#">
+                        <img id="images" src="../Responsive-Portfolio-/pictures/timroth.jpg" alt="disgust" width="200" height="200">
+                        <div class="Portfolio-item-name">
+                            <p>img4</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="Portfolio-items">
+                    <a href="#">
+                        <img id="images" src="../Responsive-Portfolio-/pictures/fear.jpg" alt="fear" width="200" height="200">
+                        <div class="Portfolio-item-name">
+                            <p>img5</p>
+                        </div>
+                    </a>
+                </div>
+
                 
-             <div class="row">
-                        <div class="col-12">
-                            <div class="p-3 mb-2 bg-info text-white">
-                                <h1>Portfolio</h1>
-                            </div>
-                        </div>
-                        <hr />
-                    </div>
+            </div>
+        </div>
+                
+          </div> 
+          
+          <footer>
+
+          </footer>
+              </div>
+              
+              <script>
+                window.onscroll = function() {myFunction()};
+                
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                  } else {
+                    header.classList.remove("sticky");
+                  }
+                }
+                </script>
+            
         
-                    <div class="row">
-                        <div class="col-6">
-                            <img src="../Responsive-Portfolio-/pictures/downtownsf.jpg" alt="la" width="150" height="150" />
-                        </div>
-                        <div class="col-6">
-                            <img src="pictures/gs.png" alt="warriors" width="150" height="150" />
-                        </div>
-        
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <img src="pictures/tor.png" alt="toronto" width="150" height="150" />
-                        </div>
-                            <div class="col-6">
-                                <img src="pictures/lala.png" alt="lal" width="150" height="150" />
-                            </div>
-                        
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <img src="pictures/me.jpg" alt="me" width="150" height="150" />
-                        </div>
-                            <div class="col-6">
-                            
-                            <img src="pictures/downtownsf.jpg" alt="sf" width="150" height="150" />
-                            
-                        </div>
-                    </div>
-                    <hr />
-                    <div class="row">
-                            <div class="col-12">
-                                <div class="p-3 mb-2 bg-info text-white">
-                                        <h1 class="text-center">Copyright</h1> 
-                                </div>
-                            </div>
-    
+                  
 </body>
 </html>
